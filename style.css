@@ -14,6 +14,7 @@
 
 :root {
   --primary-color-yellow: hsl(71, 73%, 54%);
+  --primary-color-light-blue: hsl(179, 62%, 53%);
   --primay-color-blue: hsl(179, 62%, 43%);
 
   --neutral-color-100: hsl(204, 43%, 93%);
@@ -26,4 +27,103 @@ html {
 
 body {
   background-color: var(--neutral-color-100);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+main {
+  max-width: 90%;
+  margin-bottom: 1rem;
+}
+
+.container {
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+section {
+  padding: 25px;
+}
+
+.main-section {
+  background-color: #fff;
+  color: var(--neutral-color-400);
+}
+
+.main-section h1 {
+  color: var(--primay-color-blue);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.guarantee {
+  color: var(--primary-color-yellow);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.main-section p {
+  line-height: 1.5;
+}
+
+.sub-section h2 {
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+
+.sub-section {
+  color: #fff;
+}
+
+.cost {
+  background-color: var(--primay-color-blue);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.price {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.cost-container {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.cost-container .lighter {
+    opacity: 0.6;
+}
+
+.cost button {
+  background-color: var(--primary-color-yellow);
+  color: #fff;
+  padding: 15px 0;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.info {
+  background-color: var(--primary-color-light-blue);
+}
+
+.info h2 {
+  margin-bottom: 1rem;
+}
+
+li {
+  list-style: none;
+  opacity: 0.7;
+  line-height: 1.4;
 }
