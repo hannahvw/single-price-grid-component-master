@@ -5,3 +5,25 @@
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color-yellow: hsl(71, 73%, 54%);
+  --primay-color-blue: hsl(179, 62%, 43%);
+
+  --neutral-color-100: hsl(204, 43%, 93%);
+  --neutral-color-400: hsl(218, 22%, 67%);
+}
+
+html {
+  font-family: "Karla", sans-serif;
+}
+
+body {
+  background-color: var(--neutral-color-100);
+}
