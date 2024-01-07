@@ -34,8 +34,6 @@ body {
   align-items: center;
 }
 
-
-
 main {
   max-width: 90%;
   margin-bottom: 1rem;
@@ -44,7 +42,7 @@ main {
 .container {
   overflow: hidden;
   border-radius: 10px;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
 }
 
 section {
@@ -90,28 +88,30 @@ section {
 }
 
 .price {
-    font-size: 1.5rem;
-    font-weight: 700;
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
 .cost-container {
-    display: flex;
-    gap: 0.5rem;
-    align-items: center;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
 }
 
 .cost-container .lighter {
-    opacity: 0.6;
+  opacity: 0.6;
 }
 
 .cost button {
   background-color: var(--primary-color-yellow);
   color: #fff;
+  font-size: 1.2rem;
+  font-weight: 400;
   padding: 15px 0;
   border-radius: 5px;
   outline: none;
   border: none;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
 .info {
@@ -126,4 +126,41 @@ li {
   list-style: none;
   opacity: 0.7;
   line-height: 1.4;
+}
+
+@media screen and (min-width: 450px) {
+  .container {
+    max-width: 650px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  section {
+  padding: 0 35px;
+}
+
+  .main-section {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex; 
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+  }
+
+  .sub-section {
+    padding: 30px 35px;
+  }
+
+  .cost {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .price {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
 }
